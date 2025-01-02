@@ -1,0 +1,74 @@
+/* Cấu hình chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+#chatbox {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#chatlogs {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    height: 80%;
+}
+
+#chatlogs .message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#chatlogs .user-message {
+    background-color: #0084ff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    word-wrap: break-word;
+}
+
+#chatlogs .bot-response {
+    background-color: #e4e6eb;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+#send-btn {
+    width: 15%;
+    padding: 10px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #006bb3;
+}
